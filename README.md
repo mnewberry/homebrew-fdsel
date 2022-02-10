@@ -2,9 +2,9 @@
 
 ## How do I install these formulae?
 
-`brew install fercp/repo/<formula>`
+`brew install fercp/repo/fdsel`
 
-Or `brew tap fercp/repo` and then `brew install <formula>`.
+Or `brew tap fercp/repo` and then `brew install fdsel`.
 
 ## Documentation
 
