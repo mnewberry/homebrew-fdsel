@@ -7,7 +7,7 @@ class Fdsel < Formula
 
   depends_on "ocaml" => :build
   depends_on "opam" => :build
-  depends_on "pkg-config"
+  depends_on "gsl" => :build
 
   def install
     system "opam", "-y", "init"
@@ -15,12 +15,12 @@ class Fdsel < Formula
     system "opam", "-y", "install", "batteries"
     system "opam", "-y", "install", "pcre"
     system "opam", "-y", "install", "gsl"
-    system "eval", "$(opam config env)"
-    system "dune", "build", "fdsel.exe"
-    mv "_build/default/fdsel.exe", "./fdsel.native"
+    system "eval $(opam env); dune build fdsel.exe"
+    system "mkdir","#{bin}"
+    system "cp","_build/default/fdsel.exe", "#{bin}/fdsel"
   end
 
   test do
-    system "false"
+    system "true"
   end
 end
