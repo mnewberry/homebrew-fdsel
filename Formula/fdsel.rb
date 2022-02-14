@@ -8,6 +8,7 @@ class Fdsel < Formula
   depends_on "ocaml" => :build
   depends_on "opam" => :build
   depends_on "gsl" => :build
+  depends_on "pcre" => :build
 
   def install
     system "opam", "-y", "init"
