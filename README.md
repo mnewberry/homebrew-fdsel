@@ -1,10 +1,8 @@
-# Fercp Repo
+## How to install fdsel
 
-## How do I install these formulae?
+`brew install mnewberry/fdsel/fdsel`
 
-`brew install fercp/repo/fdsel`
-
-Or `brew tap fercp/repo` and then `brew install fdsel`.
+Or `brew tap mnewberry/fdsel` and then `brew install fdsel`.
 
 ## Documentation
 

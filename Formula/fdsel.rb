@@ -1,7 +1,7 @@
 class Fdsel < Formula
   desc "CLI fdsel is an utiliy for inferring frequency-dependent selection"
   homepage "https://github.com/mnewberry/fdsel"
-  url "https://github.com/fercp/fdsel", using: :git, branch: "main"
+  url "https://github.com/mnewberry/fdsel", using: :git, branch: "main"
   version "1.0"
   license "GPL-3.0-or-later"
 
